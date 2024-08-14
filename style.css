@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7EFE5;
+  }
+  
+  .card {
+    height: 300px;
+    width: 27%;
+    background-color: #C8A1E0;
+    border-radius: 15px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px #674188;
+  }
+  
+  #quote-box {
+    align-self: center;
+    min-height: 200px;
+    background-color: #F7EFE5;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+  }
+  
+  #quote {
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .button {
+    align-self: center;
+    display: inline-block;
+    margin-top: 20px;
+    width: 200px;
+    min-height: 40px;
+    border-radius: 15px;
+    background-color: #674188;
+    color: #F7EFE5;
+  }
+  
