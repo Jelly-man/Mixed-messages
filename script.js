@@ -40,12 +40,13 @@ const objects = [
     "a bubble machine"
 ];
 
-button.addEventListener = ("click", () => {
+const newQuote = () => {
+    console.log("clicked");
     const randomSituation = situations[Math.floor(Math.random() * situations.length)];
     const randomAction = actions[Math.floor(Math.random() * actions.length)];
     const randomObject = objects[Math.floor(Math.random() * objects.length)];
-    const quoteText = `If you ever find yourself ${situations[randomSituation]}, just remember ${situations[randomSituation]} ${actions[randomAction]} with ${objects[randomObject]}`;
+    const quoteText = `If you ever find yourself ${randomSituation}, just remember  ${randomAction} with ${randomObject}`;
     quote.textContent = quoteText;
-})
+};
 
 // The above code sets up a event listener on the button and when it is clicked, it randomly selects a situation, action, and object from the arrays using the Math.floor() function  and MAth.random() function, which selects a whole number between 0 and the length of the array and sets the text content of the quote element to a new quote suing the template literal.
